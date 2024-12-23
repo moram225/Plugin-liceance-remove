@@ -1,0 +1,565 @@
+<?php
+/**
+ *
+ * SugarCRM Community Edition is a customer relationship management program developed by
+ * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
+ *
+ * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
+ * Copyright (C) 2011 - 2018 SalesAgility Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License version 3 as published by the
+ * Free Software Foundation with the addition of the following permission added
+ * to Section 15 as permitted in Section 7(a): FOR ANY PART OF THE COVERED WORK
+ * IN WHICH THE COPYRIGHT IS OWNED BY SUGARCRM, SUGARCRM DISCLAIMS THE WARRANTY
+ * OF NON INFRINGEMENT OF THIRD PARTY RIGHTS.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along with
+ * this program; if not, see http://www.gnu.org/licenses or write to the Free
+ * Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA.
+ *
+ * You can contact SugarCRM, Inc. headquarters at 10050 North Wolfe Road,
+ * SW2-130, Cupertino, CA 95014, USA. or at email address contact@sugarcrm.com.
+ *
+ * The interactive user interfaces in modified source and object code versions
+ * of this program must display Appropriate Legal Notices, as required under
+ * Section 5 of the GNU Affero General Public License version 3.
+ *
+ * In accordance with Section 7(b) of the GNU Affero General Public License version 3,
+ * these Appropriate Legal Notices must retain the display of the "Powered by
+ * SugarCRM" logo and "Supercharged by SuiteCRM" logo. If the display of the logos is not
+ * reasonably feasible for technical reasons, the Appropriate Legal Notices must
+ * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
+ */
+
+$dictionary['outr_Outright_Theme_Generator'] = array(
+    'table' => 'outr_outright_theme_generator',
+    'audited' => true,
+    'inline_edit' => true,
+    'duplicate_merge' => true,
+    'fields' => array (
+    	'header_background' =>
+    	array(  'name'  => 'header_background',
+         'vname'    => 'Header  Background', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+'len'='50',
+      ),
+    'header_border_top' =>	
+    array( 'name'   => 'header_border_top',
+         'vname'    => 'Header Border Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+'len'='50',
+      ), 
+'header_top_border_color' =>  
+    array( 'name'   => 'header_top_border_color',
+         'vname'    => 'Header Border Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),     
+    'header_margin' =>
+    array( 'name'     => 'header_margin',
+         'vname'    => 'Header Margin', 
+         'type'     => 'text',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'header_text_color' =>
+     array(  'name'     => 'header_text_color',
+         'vname'    => 'Header Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+     'header_mouse_over_text_color' =>
+      array(  'name'     => 'header_mouse_over_text_color',
+         'vname'    => 'Header Mouse Over Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'header_active_tab_text_color' =>
+     array(  'name'     => 'header_active_tab_text_color',
+         'vname'    => 'Header Active Tab Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'header_active_tab_border_color' =>
+     array(  'name'     => 'header_active_tab_border_color',
+         'vname'    => 'Header Active Tab Border Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+	'header_quick_create_button_bgcolor' =>
+	     array(  'name'     => 'header_quick_create_button_bgcolor',
+	         'vname'    => 'Header Quick Create Button Background Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),
+	'header_quick_create_btn_text_color' =>
+	     array(  'name'     => 'header_quick_create_btn_text_color',
+	         'vname'    => 'Header Quick Create Button Text Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),  
+	'header_quick_create_dropdown_bgcolor' =>
+	     array(  'name'     => 'header_quick_create_dropdown_bgcolor',
+	         'vname'    => 'Header Quick Create Dropdown Background Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),
+	'header_quick_create_drpdwn_text_color' =>
+	     array(  'name'     => 'header_quick_create_drpdwn_text_color',
+	         'vname'    => 'Header Quick Create Dropdown Text Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),
+	'header_quick_create_ddown_bgcolor_hvr' =>
+	     array(  'name'     => 'header_quick_create_ddown_bgcolor_hvr',
+	         'vname'    => 'Header Quick Create Dropdown Background Color On Hover', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),
+	'header_quick_create_drpdwn_hover_text_color' =>
+	     array(  'name'     => 'header_quick_create_drpdwn_hover_text_color',
+	         'vname'    => 'Header Quick Create Dropdown Text Color On Hover', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),
+'header_titles_font_family' =>
+         array(  'name'     => 'header_titles_font_family',
+             'vname'    => 'Header Titles Font Family', 
+             'type'     => 'enum',
+             'function' => 'get_font_family_list',
+             'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+             'required' => false,
+          ),                                    	               
+    'footer_background_color' =>
+     array(  'name'     => 'footer_background_color',
+         'vname'    => 'Footer Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'footer_text_color' =>
+     array(  'name'     => 'footer_text_color',
+         'vname'    => 'Footer Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'leftside_bar_background_color' =>
+     array(  'name'     => 'leftside_bar_background_color',
+         'vname'    => 'Left Side Bar Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'leftside_bar_text_color' =>
+     array(  'name'     => 'leftside_bar_text_color',
+         'vname'    => 'Left Side Bar Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+'leftside_bar_hover_bgcolor' =>
+     array(  'name'     => 'leftside_bar_hover_bgcolor',
+         'vname'    => 'Left Side Bar Background Color On Hover', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false
+      ),          
+    'leftside_bar_button_color' =>
+     array(  'name'     => 'leftside_bar_button_color',
+         'vname'    => 'Left Side Bar Button Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'leftside_bar_button_text_color' =>
+     array(  'name'     => 'leftside_bar_button_text_color',
+         'vname'    => 'Left Side Bar Button Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'leftside_bar_collapse_button_color' =>
+     array(  'name'     => 'leftside_bar_collapse_button_color',
+         'vname'    => 'Left Side Bar Collapse Button Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'leftside_bar_collapse_button_text_color' =>
+     array(  'name'     => 'leftside_bar_collapse_button_text_color',
+         'vname'    => 'Left Side Bar Collapse Button Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false
+      ),
+    'leftside_bar_button_bgcolor_hover' =>
+         array(  'name'     => 'leftside_bar_button_bgcolor_hover',
+             'vname'    => 'Left Side Bar Button Background Color On Hover', 
+             'type'     => 'varchar',
+             'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+             'required' => false
+          ),
+    'leftside_bar_button_textcolor_hover' =>
+         array(  'name'     => 'leftside_bar_button_textcolor_hover',
+             'vname'    => 'Left Side Bar Button Text Color On Hover', 
+             'type'     => 'varchar',
+             'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+             'required' => false
+          ),             
+    'dashlet_head_backg_color' =>
+     array(  'name'     => 'dashlet_head_backg_color',
+         'vname'    => 'Dashlet Header Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'dashlet_hea_text_color' =>
+     array(  'name'     => 'dashlet_hea_text_color',
+         'vname'    => 'Dashlet Header Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'detail_view_lable_color' =>
+     array(  'name'     => 'detail_view_lable_color',
+         'vname'    => 'Detail View Lable Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'detail_view_field_background_color' =>
+     array(  'name'     => 'detail_view_field_background_color',
+         'vname'    => 'Detail View Field Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'detail_view_field_text_color' =>
+     array(  'name'     => 'detail_view_field_text_color',
+         'vname'    => 'Detail View Field Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'detail_view_next_prev_button_background_color' =>
+     array(  'name'     => 'detail_view_next_prev_button_background_color',
+         'vname'    => 'Detail View Next Prev Button  Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+	'detail_view_overview_tab_background_color' =>
+	     array(  'name'     => 'detail_view_overview_tab_background_color',
+	         'vname'    => 'Detail View Active Tab Background Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),   
+	'detail_view_overview_tab_text_color' =>
+	     array(  'name'     => 'detail_view_overview_tab_text_color',
+	         'vname'    => 'Detail View Active Tab Text Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),             
+    'detail_view_next_prev_button_text_color' =>
+     array(  'name'     => 'detail_view_next_prev_button_text_color',
+         'vname'    => 'Detail View Next Prev Button Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+	'detail_view_tab_content_area_bgcolor' =>
+	     array(  'name'     => 'detail_view_tab_content_area_bgcolor',
+	         'vname'    => 'Detail View Tab Content Area Background Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),
+'detail_view_panel_heading_collapsed_bgcolor' =>
+         array(  'name'     => 'detail_view_panel_heading_collapsed_bgcolor',
+             'vname'    => 'Detail View Subpanel Heading Background Color', 
+             'type'     => 'varchar',
+             'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+             'required' => false,
+          ),
+'detail_view_pnl_text_color_heading' =>
+         array(  'name'     => 'detail_view_pnl_text_color_heading',
+             'vname'    => 'Detail View Subpanel Heading Text Color', 
+             'type'     => 'varchar',
+             'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+             'required' => false,
+          ),                           
+    'edit_view_lable_color' =>
+     array(  'name'     => 'edit_view_lable_color',
+         'vname'    => 'Edit View Lable Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'edit_view_panel_heading_background_colr' =>
+     array(  'name'     => 'edit_view_panel_heading_background_colr',
+         'vname'    => 'Edit View Panel & Detail View Subpanel After Collapse Heading Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'edit_view_panel_heading_text_color' =>
+     array(  'name'     => 'edit_view_panel_heading_text_color',
+         'vname'    => 'Edit View Panel Heading Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+	'edit_view_panel_container_bg_color' =>
+	     array(  'name'     => 'edit_view_panel_container_bg_color',
+	         'vname'    => 'Edit View Panel Container Background Color', 
+	         'type'     => 'varchar',
+	         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	         'required' => false,
+	      ),     
+    'list_view_head_background_color' =>
+     array(  'name'     => 'list_view_head_background_color',
+         'vname'    => 'List View Head Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'list_view_head_text_color' =>
+     array(  'name'     => 'list_view_head_text_color',
+         'vname'    => 'List View Head Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'list_view_action_bar_barbackground_color' =>
+     array(  'name'     => 'list_view_action_bar_barbackground_color',
+         'vname'    => 'List View Action Bar Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'list_view_action_bar_selectlink_top_button_color' =>
+     array(  'name'     => 'list_view_action_bar_selectlink_top_button_color',
+         'vname'    => 'List View Action Bar Select Link Button', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'list_view_action_bar_selectlink_button_hover_color' =>
+     array(  'name'     => 'list_view_action_bar_selectlink_button_hover_color',
+         'vname'    => 'List View Action Bar Select Link Button Color On Hover', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'list_view_bulk_action_disabledbutton_background_color' =>
+     array(  'name'     => 'list_view_bulk_action_disabledbutton_background_color',
+         'vname'    => 'List View Bulk Action Disabled Button Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+	'list_view_bulk_action_disabledbutton_text_color' =>
+	 array(  'name'     => 'list_view_bulk_action_disabledbutton_text_color',
+	     'vname'    => 'List View Bulk Action Disabled Button Text Color', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ), 
+	'list_view_bulk_action_button_background_color' =>
+	 array(  'name'     => 'list_view_bulk_action_button_background_color',
+	     'vname'    => 'List View Bulk Action Button Background Color', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ), 
+'list_view_bulk_action_dropdown_bgcolor' =>
+	 array(  'name'     => 'list_view_bulk_action_dropdown_bgcolor',
+	     'vname'    => 'List View Bulk Action Dropdown Background Color', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ),
+'list_view_bulk_action_drpdwn_textcolor' =>
+	 array(  'name'     => 'list_view_bulk_action_drpdwn_textcolor',
+	     'vname'    => 'List View Bulk Action Dropdown Text Color', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ),
+'list_view_bulk_action_dropdown_hover_bgcolor' =>
+	 array(  'name'     => 'list_view_bulk_action_dropdown_hover_bgcolor',
+	     'vname'    => 'List View Bulk Action Dropdown Background Color On Hover', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ),
+'list_view_bulk_action_drpdwn_hover_text_color' =>
+	 array(  'name'     => 'list_view_bulk_action_drpdwn_hover_text_color',
+	     'vname'    => 'List View Bulk Action Dropdown Text Color On Hover', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ), 	 	   	   	 
+	'list_view_filter_column_icon_background_color' =>
+	 array(  'name'     => 'list_view_filter_column_icon_background_color',
+	     'vname'    => 'List View Filter & Column Icon Background Color', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ),
+	'list_view_filter_column_icon_background_hover_color' =>
+	 array(  'name'     => 'list_view_filter_column_icon_background_hover_color',
+	     'vname'    => 'List View Filter & Column Icon Background Color On Hover', 
+	     'type'     => 'varchar',
+	     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+	     'required' => false,
+	  ), 
+	'list_view_pagination_left_side_button_bgcolor' => 
+		 array(  'name'     => 'list_view_pagination_left_side_button_bgcolor',
+		     'vname'    => 'List View Pagination Left Button Background Color', 
+		     'type'     => 'varchar',
+		     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+		     'required' => false,
+		  ), 
+	'list_view_pagination_left_side_button_color' => 
+		 array(  'name'     => 'list_view_pagination_left_side_button_color',
+		     'vname'    => 'List View Pagination Left Button Color', 
+		     'type'     => 'varchar',
+		     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+		     'required' => false,
+		  ),
+	'list_view_pagination_right_side_button_bgcolor' => 
+		 array(  'name'     => 'list_view_pagination_right_side_button_bgcolor',
+		     'vname'    => 'List View Pagination Right Button Background Color', 
+		     'type'     => 'varchar',
+		     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+		     'required' => false,
+		  ), 
+	'list_view_pagination_button_color_right' => 
+		 array(  'name'     => 'list_view_pagination_button_color_right',
+		     'vname'    => 'List View Pagination Right Button Color', 
+		     'type'     => 'varchar',
+		     'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+		     'required' => false,
+		  ),	  	    	 
+    'global_body_bgr_clr' =>
+     array(  'name'     => 'global_body_bgr_clr',
+         'vname'    => 'Body Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'global_body_font_fmly' =>
+     array(  'name'     => 'global_body_font_fmly',
+         'vname'    => 'Font Family', 
+         'type'     => 'enum',
+         'function' => 'get_font_family_list',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),   
+    'global_font_color' =>
+     array(  'name'     => 'global_font_color',
+         'vname'    => 'Font Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'global_text_box_backcolor' =>
+     array(  'name'     => 'global_text_box_backcolor',
+         'vname'    => 'Input Text Box Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'global_text_box_brdr_color' =>
+     array(  'name'     => 'global_text_box_brdr_color',
+         'vname'    => 'Input Text Box Border Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'global_buttons_bck_color' =>
+     array(  'name'     => 'global_buttons_bck_color',
+         'vname'    => 'Buttons Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),     
+    'global_buttons_txt_color' =>
+     array(  'name'     => 'global_buttons_txt_color',
+         'vname'    => 'Buttons Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ), 
+    'global_buttons_hover_bck_color' =>
+     array(  'name'     => 'global_buttons_hover_bck_color',
+         'vname'    => 'Buttons Hover Background Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'global_buttons_hover_txt_color' =>
+     array(  'name'     => 'global_buttons_hover_txt_color',
+         'vname'    => 'Buttons Hover Text Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+'global_anchor_tag_color' =>
+     array(  'name'     => 'global_anchor_tag_color',
+         'vname'    => 'Global Anchor Tag Color', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),     
+    'custom_font_family' =>
+     array(  'name'     => 'custom_font_family',
+         'vname'    => 'Custom Font Family Name', 
+         'type'     => 'varchar',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'required' => false,
+      ),
+    'assign_all_users' =>
+     array(  'name'     => 'assign_all_users',
+         'vname'    => 'Assign All user if select', 
+         'type'     => 'bool',
+         'studio'   => array('listview' => true,'detailview' => true,'editview' => true),
+         'default' => false,
+      ),
+
+),
+    'relationships' => array (
+),
+    'optimistic_locking' => true,
+    'unified_search' => true,
+);
+if (!class_exists('VardefManager')) {
+        require_once('include/SugarObjects/VardefManager.php');
+}
+VardefManager::createVardef('outr_Outright_Theme_Generator', 'outr_Outright_Theme_Generator', array('basic','assignable','security_groups'));
